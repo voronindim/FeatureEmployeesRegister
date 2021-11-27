@@ -18,6 +18,8 @@ final class ViewControllerFactory {
     
     func structureViewController(folderId: UUID?) -> StructureViewController {
         let viewController = StructureViewController()
+        viewController.title = "Моя команда"
+        viewController.tabBarItem.image = UIImage(systemName: "person.3")
         viewController.viewModel = viewModelFactory.strctureViewModel(folderId: folderId)
         return viewController
     }
