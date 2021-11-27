@@ -8,11 +8,71 @@
 
 /* Begin PBXBuildFile section */
 		28AE8A3F2752506F00FCFDE7 /* FeatureEmployeesRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = 28AE8A3E2752506F00FCFDE7 /* FeatureEmployeesRegister.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28AE8A50275251F400FCFDE7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A4F275251F400FCFDE7 /* Coordinator.swift */; };
+		28AE8A522752523100FCFDE7 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A512752523100FCFDE7 /* Employee.swift */; };
+		28AE8A55275252C300FCFDE7 /* Departament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A54275252C300FCFDE7 /* Departament.swift */; };
+		28AE8A572752540E00FCFDE7 /* EmployeesListAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A562752540E00FCFDE7 /* EmployeesListAppModel.swift */; };
+		28AE8A5B2752549A00FCFDE7 /* DepartamentStructureUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A5A2752549A00FCFDE7 /* DepartamentStructureUseCase.swift */; };
+		28AE8A5D2752550F00FCFDE7 /* UseCaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A5C2752550F00FCFDE7 /* UseCaseError.swift */; };
+		28AE8A602752555300FCFDE7 /* StructureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A5F2752555300FCFDE7 /* StructureResult.swift */; };
+		28AE8A62275255EE00FCFDE7 /* DepartamentStructureUseCaseImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A61275255EE00FCFDE7 /* DepartamentStructureUseCaseImplementation.swift */; };
+		28AE8A69275256EE00FCFDE7 /* AppModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A68275256EE00FCFDE7 /* AppModelState.swift */; };
+		28AE8A6B2752585600FCFDE7 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A6A2752585600FCFDE7 /* Mode.swift */; };
+		28AE8A6D275258D800FCFDE7 /* EmployeesRegisterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A6C275258D800FCFDE7 /* EmployeesRegisterModule.swift */; };
+		28AE8A6F2752595500FCFDE7 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A6E2752595500FCFDE7 /* ViewControllerFactory.swift */; };
+		28AE8A7227525AFA00FCFDE7 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A7127525AFA00FCFDE7 /* UseCaseFactory.swift */; };
+		28AE8A7427525C4600FCFDE7 /* EmployessListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A7327525C4600FCFDE7 /* EmployessListViewModel.swift */; };
+		28AE8A7827525CA500FCFDE7 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A7727525CA500FCFDE7 /* ViewState.swift */; };
+		28AE8A7A27525CCF00FCFDE7 /* ViewErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A7927525CCF00FCFDE7 /* ViewErrorType.swift */; };
+		28AE8A7C27525D1100FCFDE7 /* StructureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A7B27525D1100FCFDE7 /* StructureViewModel.swift */; };
+		28AE8A7F27525FAD00FCFDE7 /* ViewModelsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A7E27525FAD00FCFDE7 /* ViewModelsFactory.swift */; };
+		28AE8A81275260E400FCFDE7 /* StructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A80275260E400FCFDE7 /* StructureViewController.swift */; };
+		28AE8A8B27526A0700FCFDE7 /* StructureTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A8A27526A0700FCFDE7 /* StructureTableViewSection.swift */; };
+		28AE8A8D2752717300FCFDE7 /* StructureDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A8C2752717300FCFDE7 /* StructureDataSource.swift */; };
+		28AE8A912752775B00FCFDE7 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A8F2752775B00FCFDE7 /* EmployeeTableViewCell.swift */; };
+		28AE8A922752775B00FCFDE7 /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AE8A902752775B00FCFDE7 /* EmployeeTableViewCell.xib */; };
+		28AE8A9527527FA500FCFDE7 /* DepartamentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A9327527FA500FCFDE7 /* DepartamentTableViewCell.swift */; };
+		28AE8A9627527FA500FCFDE7 /* DepartamentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AE8A9427527FA500FCFDE7 /* DepartamentTableViewCell.xib */; };
+		28AE8A982752991A00FCFDE7 /* SelectionItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A972752991A00FCFDE7 /* SelectionItems.swift */; };
+		28AE8A9A27529C2B00FCFDE7 /* SelectButtonDidTapType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A9927529C2B00FCFDE7 /* SelectButtonDidTapType.swift */; };
+		28AE8A9C2752A7D800FCFDE7 /* PublicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AE8A9B2752A7D800FCFDE7 /* PublicItem.swift */; };
+		83BBC659AC033F8F9FDFCCB2 /* Pods_FeatureEmployeesRegister.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19EF33A243EB6A977159360 /* Pods_FeatureEmployeesRegister.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A6029DEAC5D69EF1028EBDD /* Pods-FeatureEmployeesRegister.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureEmployeesRegister.release.xcconfig"; path = "Target Support Files/Pods-FeatureEmployeesRegister/Pods-FeatureEmployeesRegister.release.xcconfig"; sourceTree = "<group>"; };
 		28AE8A3B2752506F00FCFDE7 /* FeatureEmployeesRegister.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureEmployeesRegister.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AE8A3E2752506F00FCFDE7 /* FeatureEmployeesRegister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureEmployeesRegister.h; sourceTree = "<group>"; };
+		28AE8A4F275251F400FCFDE7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		28AE8A512752523100FCFDE7 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		28AE8A54275252C300FCFDE7 /* Departament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departament.swift; sourceTree = "<group>"; };
+		28AE8A562752540E00FCFDE7 /* EmployeesListAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesListAppModel.swift; sourceTree = "<group>"; };
+		28AE8A5A2752549A00FCFDE7 /* DepartamentStructureUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentStructureUseCase.swift; sourceTree = "<group>"; };
+		28AE8A5C2752550F00FCFDE7 /* UseCaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseError.swift; sourceTree = "<group>"; };
+		28AE8A5F2752555300FCFDE7 /* StructureResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructureResult.swift; sourceTree = "<group>"; };
+		28AE8A61275255EE00FCFDE7 /* DepartamentStructureUseCaseImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentStructureUseCaseImplementation.swift; sourceTree = "<group>"; };
+		28AE8A68275256EE00FCFDE7 /* AppModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelState.swift; sourceTree = "<group>"; };
+		28AE8A6A2752585600FCFDE7 /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+		28AE8A6C275258D800FCFDE7 /* EmployeesRegisterModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesRegisterModule.swift; sourceTree = "<group>"; };
+		28AE8A6E2752595500FCFDE7 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		28AE8A7127525AFA00FCFDE7 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
+		28AE8A7327525C4600FCFDE7 /* EmployessListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployessListViewModel.swift; sourceTree = "<group>"; };
+		28AE8A7727525CA500FCFDE7 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		28AE8A7927525CCF00FCFDE7 /* ViewErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewErrorType.swift; sourceTree = "<group>"; };
+		28AE8A7B27525D1100FCFDE7 /* StructureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructureViewModel.swift; sourceTree = "<group>"; };
+		28AE8A7E27525FAD00FCFDE7 /* ViewModelsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsFactory.swift; sourceTree = "<group>"; };
+		28AE8A80275260E400FCFDE7 /* StructureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructureViewController.swift; sourceTree = "<group>"; };
+		28AE8A8A27526A0700FCFDE7 /* StructureTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructureTableViewSection.swift; sourceTree = "<group>"; };
+		28AE8A8C2752717300FCFDE7 /* StructureDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructureDataSource.swift; sourceTree = "<group>"; };
+		28AE8A8F2752775B00FCFDE7 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		28AE8A902752775B00FCFDE7 /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
+		28AE8A9327527FA500FCFDE7 /* DepartamentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentTableViewCell.swift; sourceTree = "<group>"; };
+		28AE8A9427527FA500FCFDE7 /* DepartamentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepartamentTableViewCell.xib; sourceTree = "<group>"; };
+		28AE8A972752991A00FCFDE7 /* SelectionItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionItems.swift; sourceTree = "<group>"; };
+		28AE8A9927529C2B00FCFDE7 /* SelectButtonDidTapType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButtonDidTapType.swift; sourceTree = "<group>"; };
+		28AE8A9B2752A7D800FCFDE7 /* PublicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicItem.swift; sourceTree = "<group>"; };
+		C4E295A167410B1E101AB69F /* Pods-FeatureEmployeesRegister.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureEmployeesRegister.debug.xcconfig"; path = "Target Support Files/Pods-FeatureEmployeesRegister/Pods-FeatureEmployeesRegister.debug.xcconfig"; sourceTree = "<group>"; };
+		E19EF33A243EB6A977159360 /* Pods_FeatureEmployeesRegister.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeatureEmployeesRegister.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,17 +80,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BBC659AC033F8F9FDFCCB2 /* Pods_FeatureEmployeesRegister.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16778B5A2C010C3F0FBC7B7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4E295A167410B1E101AB69F /* Pods-FeatureEmployeesRegister.debug.xcconfig */,
+				0A6029DEAC5D69EF1028EBDD /* Pods-FeatureEmployeesRegister.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
 		28AE8A312752506F00FCFDE7 = {
 			isa = PBXGroup;
 			children = (
 				28AE8A3D2752506F00FCFDE7 /* FeatureEmployeesRegister */,
 				28AE8A3C2752506F00FCFDE7 /* Products */,
+				16778B5A2C010C3F0FBC7B7C /* Pods */,
+				2AE7CC521DFC8DFFF49B1A12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,9 +118,205 @@
 		28AE8A3D2752506F00FCFDE7 /* FeatureEmployeesRegister */ = {
 			isa = PBXGroup;
 			children = (
+				28AE8A452752507300FCFDE7 /* EmployeesRegister */,
 				28AE8A3E2752506F00FCFDE7 /* FeatureEmployeesRegister.h */,
 			);
 			path = FeatureEmployeesRegister;
+			sourceTree = "<group>";
+		};
+		28AE8A452752507300FCFDE7 /* EmployeesRegister */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A462752511500FCFDE7 /* Domain */,
+				28AE8A472752511F00FCFDE7 /* App */,
+				28AE8A482752512700FCFDE7 /* Presentation */,
+				28AE8A492752513300FCFDE7 /* Infrastructure */,
+				28AE8A4A2752514000FCFDE7 /* Module */,
+				28AE8A4B2752514700FCFDE7 /* Resourses */,
+			);
+			path = EmployeesRegister;
+			sourceTree = "<group>";
+		};
+		28AE8A462752511500FCFDE7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A512752523100FCFDE7 /* Employee.swift */,
+				28AE8A54275252C300FCFDE7 /* Departament.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		28AE8A472752511F00FCFDE7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A7027525AEB00FCFDE7 /* UseCaseFactory */,
+				28AE8A67275256E500FCFDE7 /* States */,
+				28AE8A592752543300FCFDE7 /* UseCases */,
+				28AE8A582752542B00FCFDE7 /* AppModel */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		28AE8A482752512700FCFDE7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A7D27525F9D00FCFDE7 /* ViewModelsFactory */,
+				28AE8A7627525C9900FCFDE7 /* ViewStates */,
+				28AE8A7527525C9200FCFDE7 /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		28AE8A492752513300FCFDE7 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A4E275251C700FCFDE7 /* ViewControllersFactory */,
+				28AE8A4D2752517300FCFDE7 /* UI */,
+				28AE8A4C2752516500FCFDE7 /* Coordinators */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		28AE8A4A2752514000FCFDE7 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A6C275258D800FCFDE7 /* EmployeesRegisterModule.swift */,
+				28AE8A9B2752A7D800FCFDE7 /* PublicItem.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		28AE8A4B2752514700FCFDE7 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		28AE8A4C2752516500FCFDE7 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A4F275251F400FCFDE7 /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		28AE8A4D2752517300FCFDE7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A8E275274BC00FCFDE7 /* Cells */,
+				28AE8A80275260E400FCFDE7 /* StructureViewController.swift */,
+				28AE8A8C2752717300FCFDE7 /* StructureDataSource.swift */,
+				28AE8A9927529C2B00FCFDE7 /* SelectButtonDidTapType.swift */,
+				28AE8A8A27526A0700FCFDE7 /* StructureTableViewSection.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		28AE8A4E275251C700FCFDE7 /* ViewControllersFactory */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A6E2752595500FCFDE7 /* ViewControllerFactory.swift */,
+			);
+			path = ViewControllersFactory;
+			sourceTree = "<group>";
+		};
+		28AE8A582752542B00FCFDE7 /* AppModel */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A562752540E00FCFDE7 /* EmployeesListAppModel.swift */,
+				28AE8A6A2752585600FCFDE7 /* Mode.swift */,
+				28AE8A972752991A00FCFDE7 /* SelectionItems.swift */,
+			);
+			path = AppModel;
+			sourceTree = "<group>";
+		};
+		28AE8A592752543300FCFDE7 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A5C2752550F00FCFDE7 /* UseCaseError.swift */,
+				28AE8A5E2752553E00FCFDE7 /* UseCaseResults */,
+				28AE8A632752562800FCFDE7 /* DepartamentStructureUseCase */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		28AE8A5E2752553E00FCFDE7 /* UseCaseResults */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A5F2752555300FCFDE7 /* StructureResult.swift */,
+			);
+			path = UseCaseResults;
+			sourceTree = "<group>";
+		};
+		28AE8A632752562800FCFDE7 /* DepartamentStructureUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A5A2752549A00FCFDE7 /* DepartamentStructureUseCase.swift */,
+				28AE8A61275255EE00FCFDE7 /* DepartamentStructureUseCaseImplementation.swift */,
+			);
+			path = DepartamentStructureUseCase;
+			sourceTree = "<group>";
+		};
+		28AE8A67275256E500FCFDE7 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A68275256EE00FCFDE7 /* AppModelState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		28AE8A7027525AEB00FCFDE7 /* UseCaseFactory */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A7127525AFA00FCFDE7 /* UseCaseFactory.swift */,
+			);
+			path = UseCaseFactory;
+			sourceTree = "<group>";
+		};
+		28AE8A7527525C9200FCFDE7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A7327525C4600FCFDE7 /* EmployessListViewModel.swift */,
+				28AE8A7B27525D1100FCFDE7 /* StructureViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		28AE8A7627525C9900FCFDE7 /* ViewStates */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A7727525CA500FCFDE7 /* ViewState.swift */,
+				28AE8A7927525CCF00FCFDE7 /* ViewErrorType.swift */,
+			);
+			path = ViewStates;
+			sourceTree = "<group>";
+		};
+		28AE8A7D27525F9D00FCFDE7 /* ViewModelsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A7E27525FAD00FCFDE7 /* ViewModelsFactory.swift */,
+			);
+			path = ViewModelsFactory;
+			sourceTree = "<group>";
+		};
+		28AE8A8E275274BC00FCFDE7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				28AE8A8F2752775B00FCFDE7 /* EmployeeTableViewCell.swift */,
+				28AE8A902752775B00FCFDE7 /* EmployeeTableViewCell.xib */,
+				28AE8A9327527FA500FCFDE7 /* DepartamentTableViewCell.swift */,
+				28AE8A9427527FA500FCFDE7 /* DepartamentTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2AE7CC521DFC8DFFF49B1A12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E19EF33A243EB6A977159360 /* Pods_FeatureEmployeesRegister.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,6 +337,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28AE8A422752506F00FCFDE7 /* Build configuration list for PBXNativeTarget "FeatureEmployeesRegister" */;
 			buildPhases = (
+				5C78B1E08B24FD3E22B3C8A1 /* [CP] Check Pods Manifest.lock */,
 				28AE8A362752506F00FCFDE7 /* Headers */,
 				28AE8A372752506F00FCFDE7 /* Sources */,
 				28AE8A382752506F00FCFDE7 /* Frameworks */,
@@ -93,6 +363,7 @@
 				TargetAttributes = {
 					28AE8A3A2752506F00FCFDE7 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -119,16 +390,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AE8A922752775B00FCFDE7 /* EmployeeTableViewCell.xib in Resources */,
+				28AE8A9627527FA500FCFDE7 /* DepartamentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C78B1E08B24FD3E22B3C8A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeatureEmployeesRegister-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28AE8A372752506F00FCFDE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AE8A9A27529C2B00FCFDE7 /* SelectButtonDidTapType.swift in Sources */,
+				28AE8A50275251F400FCFDE7 /* Coordinator.swift in Sources */,
+				28AE8A6B2752585600FCFDE7 /* Mode.swift in Sources */,
+				28AE8A7827525CA500FCFDE7 /* ViewState.swift in Sources */,
+				28AE8A522752523100FCFDE7 /* Employee.swift in Sources */,
+				28AE8A982752991A00FCFDE7 /* SelectionItems.swift in Sources */,
+				28AE8A8D2752717300FCFDE7 /* StructureDataSource.swift in Sources */,
+				28AE8A9C2752A7D800FCFDE7 /* PublicItem.swift in Sources */,
+				28AE8A5D2752550F00FCFDE7 /* UseCaseError.swift in Sources */,
+				28AE8A7A27525CCF00FCFDE7 /* ViewErrorType.swift in Sources */,
+				28AE8A7427525C4600FCFDE7 /* EmployessListViewModel.swift in Sources */,
+				28AE8A8B27526A0700FCFDE7 /* StructureTableViewSection.swift in Sources */,
+				28AE8A62275255EE00FCFDE7 /* DepartamentStructureUseCaseImplementation.swift in Sources */,
+				28AE8A5B2752549A00FCFDE7 /* DepartamentStructureUseCase.swift in Sources */,
+				28AE8A6D275258D800FCFDE7 /* EmployeesRegisterModule.swift in Sources */,
+				28AE8A55275252C300FCFDE7 /* Departament.swift in Sources */,
+				28AE8A69275256EE00FCFDE7 /* AppModelState.swift in Sources */,
+				28AE8A81275260E400FCFDE7 /* StructureViewController.swift in Sources */,
+				28AE8A6F2752595500FCFDE7 /* ViewControllerFactory.swift in Sources */,
+				28AE8A7F27525FAD00FCFDE7 /* ViewModelsFactory.swift in Sources */,
+				28AE8A912752775B00FCFDE7 /* EmployeeTableViewCell.swift in Sources */,
+				28AE8A9527527FA500FCFDE7 /* DepartamentTableViewCell.swift in Sources */,
+				28AE8A602752555300FCFDE7 /* StructureResult.swift in Sources */,
+				28AE8A572752540E00FCFDE7 /* EmployeesListAppModel.swift in Sources */,
+				28AE8A7227525AFA00FCFDE7 /* UseCaseFactory.swift in Sources */,
+				28AE8A7C27525D1100FCFDE7 /* StructureViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +583,9 @@
 		};
 		28AE8A432752506F00FCFDE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E295A167410B1E101AB69F /* Pods-FeatureEmployeesRegister.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -279,7 +605,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Dmitrii.FeatureEmployeesRegister;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,7 +615,9 @@
 		};
 		28AE8A442752506F00FCFDE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A6029DEAC5D69EF1028EBDD /* Pods-FeatureEmployeesRegister.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -307,6 +637,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Dmitrii.FeatureEmployeesRegister;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
