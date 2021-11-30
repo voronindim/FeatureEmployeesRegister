@@ -23,7 +23,7 @@ class StructureViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.keyboardDismissMode = .onDrag
         tableView.sectionHeaderTopPadding = .zero
-        tableView.rowHeight = 80
+//        tableView.rowHeight = 80
         return tableView
     }()
     
