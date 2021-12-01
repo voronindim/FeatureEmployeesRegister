@@ -23,7 +23,7 @@ class StructureViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.keyboardDismissMode = .onDrag
         tableView.sectionHeaderTopPadding = .zero
-//        tableView.rowHeight = 80
+        tableView.rowHeight = 60
         return tableView
     }()
     
@@ -78,7 +78,6 @@ class StructureViewController: UIViewController {
     }
     
     private func setupNavigationbar() {
-        title = "Моя команда"
         navigationItem.backButtonDisplayMode = .minimal
     }
     

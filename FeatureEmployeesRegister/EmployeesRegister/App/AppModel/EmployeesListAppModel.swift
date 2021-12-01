@@ -50,8 +50,8 @@ fileprivate var mock = StructureResult(
     employees: [
         .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "position"),
         .init(id: UUID(), name: "askljd lasjkljd lasjkljd lasjkljd lasjkljd lasjkljd lasj kljd lasjkljd lasj kljd lasjdf", avatarUrl: nil, position: "position"),
-        .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "position"),
-        .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "position"),
+        .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "pflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksjn"),
+        .init(id: UUID(), name: "asflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksjdf", avatarUrl: nil, position: "position"),
         .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "position"),
         .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "position"),
         .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "position")

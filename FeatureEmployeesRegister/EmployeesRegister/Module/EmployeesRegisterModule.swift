@@ -11,7 +11,7 @@ import UIKit
 public final class EmployeesRegisterModule {
     private let coordinator: Coordinator
     
-    public init(navigationController: UINavigationController, mode: Mode, selectionHandler: ((PublicItem) -> Void)?) {
+    public init(navigationController: UINavigationController, mode: Mode, selectionHandler: ((PublicItem) -> Void)? = nil) {
         let departamentStructureUseCase = DepartamentStructureUseCaseImplementation()
         let appModel = EmployeesListAppModel(departamentsStructureUseCase: departamentStructureUseCase, mode: mode)
         let viewModelsFactory = ViewModelsFactory(appModel: appModel)
