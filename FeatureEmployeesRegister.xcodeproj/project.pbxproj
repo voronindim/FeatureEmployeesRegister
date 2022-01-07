@@ -132,7 +132,6 @@
 				28AE8A482752512700FCFDE7 /* Presentation */,
 				28AE8A492752513300FCFDE7 /* Infrastructure */,
 				28AE8A4A2752514000FCFDE7 /* Module */,
-				28AE8A4B2752514700FCFDE7 /* Resourses */,
 			);
 			path = EmployeesRegister;
 			sourceTree = "<group>";
@@ -184,13 +183,6 @@
 				28AE8A9B2752A7D800FCFDE7 /* PublicItem.swift */,
 			);
 			path = Module;
-			sourceTree = "<group>";
-		};
-		28AE8A4B2752514700FCFDE7 /* Resourses */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resourses;
 			sourceTree = "<group>";
 		};
 		28AE8A4C2752516500FCFDE7 /* Coordinators */ = {
@@ -589,7 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = T6MNVTWZS3;
+				DEVELOPMENT_TEAM = 2MPH9SHAAA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -621,7 +613,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = T6MNVTWZS3;
+				DEVELOPMENT_TEAM = 2MPH9SHAAA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
