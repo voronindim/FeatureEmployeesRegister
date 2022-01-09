@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class EmployeeTableViewCell: UITableViewCell {
 
@@ -38,6 +39,10 @@ class EmployeeTableViewCell: UITableViewCell {
     func setViewState(_ model: Model) {
         userNameLabel.text = model.name
         positionLabel.text = model.position
+        avatarImageView.layer.cornerRadius = avatarImageView.frame.height / 2
+        if let url = model.avatarUrl {
+            avatarImageView.kf.setImage(with: url, placeholder: UIImage(systemName: "person.fill")?.withTintColor(.gray))
+        }
         if let isSelected = model.isSelected {
             selectButton.isHidden = false
             let image = isSelected ? UIImage(systemName: "minus.circle") : UIImage(systemName: "plus.circle")

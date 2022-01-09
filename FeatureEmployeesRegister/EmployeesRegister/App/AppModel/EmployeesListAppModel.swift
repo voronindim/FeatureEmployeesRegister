@@ -19,6 +19,7 @@ final class EmployeesListAppModel {
     // MARK: - Private(set) Properties
     
     private(set) var mode: Mode
+    private var folderId: UUID?
     
     // MARK: - Private Properties
     
@@ -27,46 +28,33 @@ final class EmployeesListAppModel {
     
     // MARK: - Initialize
     
-    init(departamentsStructureUseCase: DepartamentStructureUseCase, mode: Mode) {
+    init(departamentsStructureUseCase: DepartamentStructureUseCase, mode: Mode, folderId: UUID?) {
         self.departamentsStructureUseCase = departamentsStructureUseCase
         self.mode = mode
-        self.stateSubejct.onNext(.loaded(mock))
+        self.folderId = folderId
+        update()
     }
     
     // MARK: - Public Methods
     
-    func openDepartament(id: UUID?) {
-        
+    func refresh() {
+        update()
     }
-    
+
     // MARK: - Private Methods
     
-    
+    private func update() {
+        Task {
+            let result = await departamentsStructureUseCase.structure(id: folderId)
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let result):
+                    self.stateSubejct.onNext(.loaded(result))
+                case .failure(let useCaseError):
+                    self.stateSubejct.onNext(.error(useCaseError))
+                }
+            }
+        }
+    }
     
 }
-
-fileprivate var mock = StructureResult(
-    departaments: dep,
-    employees: [
-        .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "position"),
-        .init(id: UUID(), name: "askljd lasjkljd lasjkljd lasjkljd lasjkljd lasjkljd lasj kljd lasjkljd lasj kljd lasjdf", avatarUrl: nil, position: "position"),
-        .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "pflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksjn"),
-        .init(id: UUID(), name: "asflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksjdf", avatarUrl: nil, position: "position"),
-        .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "position"),
-        .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "position"),
-        .init(id: UUID(), name: "askljd lasjdf", avatarUrl: nil, position: "position")
-    ],
-    hasMore: true
-)
-
-fileprivate var dep: [Departament] = [
-    .init(id: UUID(), name: "alksj lksajdflk aj askdjf as"),
-    .init(id: UUID(), name: "alksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf asalksj lksajdflk asl;fj salsdf dsfdfj askdjf as"),
-    .init(id: UUID(), name: "alksj sdfsf asl;fj saldfj askdjf as"),
-    .init(id: UUID(), name: "alksj lksajdflk asl;fj saldfj askdjf as"),
-    .init(id: UUID(), name: "alksj lksajdflk s asl;fj saldfj askdjf as"),
-    .init(id: UUID(), name: "alksj lksajdflk aaf sdf sadf sdf sl;fj saldfj askdjf as"),
-    .init(id: UUID(), name: "alksj lksajdaldfj askdjf as"),
-    .init(id: UUID(), name: "alksj lksajdflk asl;fj  askdjf as")
-]
-

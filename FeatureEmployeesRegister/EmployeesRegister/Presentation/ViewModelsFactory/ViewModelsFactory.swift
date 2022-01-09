@@ -8,14 +8,14 @@
 import Foundation
 
 final class ViewModelsFactory {
-    private let appModel: EmployeesListAppModel
+    private let appModelFactory: AppModelFactory
     
-    init(appModel: EmployeesListAppModel) {
-        self.appModel = appModel
+    init(appModelFactory: AppModelFactory) {
+        self.appModelFactory = appModelFactory
     }
     
     func strctureViewModel(folderId: UUID?) -> EmployeesListViewModel {
-        let viewModel = EmployeesListViewModel(appModel: appModel)
+        let viewModel = EmployeesListViewModel(appModel: appModelFactory.employeesListAppModel(folderId: folderId))
         return viewModel
     }
 }

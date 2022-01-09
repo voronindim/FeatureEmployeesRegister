@@ -37,6 +37,6 @@ extension Coordinator {
     }
     
     func showPersonDetailsViewController(id: UUID) {
-        
+        navigationController.pushViewController(UIViewController(), animated: true)
     }
 }

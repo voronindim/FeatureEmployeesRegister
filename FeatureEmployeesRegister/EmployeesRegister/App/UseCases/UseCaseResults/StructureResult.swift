@@ -10,5 +10,4 @@ import Foundation
 struct StructureResult {
     let departaments: [Departament]
     let employees: [Employee]
-    let hasMore: Bool
 }

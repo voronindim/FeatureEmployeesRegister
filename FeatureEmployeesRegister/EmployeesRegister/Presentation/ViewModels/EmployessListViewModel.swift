@@ -37,7 +37,7 @@ final class EmployeesListViewModel {
     // MARK: - Public Methods
     
     func refresh() {
-        
+        appModel.refresh()
     }
     
     // MARK: - Private Methods
