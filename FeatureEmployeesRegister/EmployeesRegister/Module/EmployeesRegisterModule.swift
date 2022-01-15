@@ -12,8 +12,8 @@ import Networking
 public final class EmployeesRegisterModule {
     private let coordinator: Coordinator
     
-    public init(navigationController: UINavigationController, mode: Mode, apiSession: AsyncGenericApi, selectionHandler: ((PublicItem) -> Void)? = nil) {
-        let gatewayFactory = GatewayFactory(apiSession: apiSession)
+    public init(navigationController: UINavigationController, mode: Mode, apiSession: AsyncGenericApi, token: String,  selectionHandler: ((PublicItem) -> Void)? = nil) {
+        let gatewayFactory = GatewayFactory(apiSession: apiSession, token: token)
         let useCaseFactory = UseCaseFactory(gatewayFactory: gatewayFactory)
         let appModelFactory = AppModelFactory(useCaseFactory: useCaseFactory, mode: mode)
         let viewModelsFactory = ViewModelsFactory(appModelFactory: appModelFactory)

@@ -10,9 +10,11 @@ import Networking
 
 final class DepartamentStructureGateway {
     private let apiSession: AsyncGenericApi
+    private let token: String
     
-    init(apiSession: AsyncGenericApi) {
+    init(apiSession: AsyncGenericApi, token: String) {
         self.apiSession = apiSession
+        self.token = token
     }
     
     func structure(id: UUID?) async -> Result<StructureResult, GatewayError> {
@@ -31,10 +33,10 @@ final class DepartamentStructureGateway {
         if let id = id {
             let urlString = baseUrl.appendingPathComponent("DepartmentStructure/structure?departmentId=\(id.uuidString.lowercased())").absoluteString.removingPercentEncoding!
             let url = URL(string: urlString)!
-            return URLRequest(url: url)
+            return URLRequest(url: url).addToken(token: token)
         }
         let url = baseUrl.appendingPathComponent("DepartmentStructure/structure", isDirectory: false)
-        return URLRequest(url: url)
+        return URLRequest(url: url).addToken(token: token)
     }
     
 }
